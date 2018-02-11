@@ -11,93 +11,110 @@ body {font-family: "Lato", sans-serif}
 <body>
 
 <!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="Shaw.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-    <a href="About.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
-    <a href="Research.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Research</a>
-    <a href="Publications.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Publications</a>
- 
- <div class="w3-dropdown-hover">
-     <button class="w3-bar-item w3-button w3-padding-large">Legacy &#8744; </button>
-     <div class="w3-dropdown-content w3-bar-block w3-card-4">
-       <a href="Challenge.html" class="w3-bar-item w3-button w3-padding-large"">Challenge</a>
-       <a href="Contributions.html" class="w3-bar-item w3-button w3-padding-large">Shaw's Contributions after death</a>
-     </div>
-     
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
-
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="About.html" class="w3-bar-item w3-button w3-padding-large">About</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">Research</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Pictures/Historical Documents</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact/Legacy</a>
-</div>
-
-
-
-<par> The "Hack the Deep" Hackathon at the American Museum of Natural History (AMNH) had a challenge for High School Students to 
-take on one of the challenges for a prize. We, the Brown Scholars in the BridgeUp:STEM program at AMNH decided to create a 
-website highlighting the wonderful life and career of Dr. Evelyn Shaw.</par>
-
- <!-- Mailing List Section -->
-  <div class="w3-white" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Mailing List</h2>
-      <p class="w3-opacity w3-center"><i>Join today to receive special messages!</i></p><br>
-
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="https://raw.githubusercontent.com/amnh/HackTheDeep/master/challenges/Untold_Stories_of_Women_in_Science/Evelyn_Shaw/Shaw.jpg" class="w3-round w3-margin-bottom" alt="Random Name" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>New York Mailing List</b></p>
-            <p class="w3-opacity">Text Here</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Click To Join</button>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-<!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
-<script>
-function myMap() {
-  myCenter=new google.maps.LatLng(40.781324, -73.973988);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
+<style>
+body {
+background-color: #f2f2f2;
 }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">BridgeUp:STEM - Brown Scholars 2018 Hack the Deep</a></p>
-</footer>
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+
+<div class="navbar">
+  <a href="Shaw.html">HOME</a>
+  <div class="dropdown">
+    <button class="dropbtn">ABOUT 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="About.html">BIOGRAPHY</a>
+      <a href="adversities.html">ADVERSITIES</a>
+    </div>
+  </div>   
+  <a href="Research.html">RESEARCH</a>
+  <a href="Publications.html">PUBLICATIONS</a>
+  <div class="dropdown">
+    <button class="dropbtn">LEGACY 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Contributions.html">SHAW'S CONTRIBUTIONS</a>
+      <a href="Challenge.html">HACK THE DEEP</a>
+      <a href="Social_Media.html">SOCIAL MEDIA</a>
+    </div>
+  </div> 
+</div>
+<h1 style= "text-align: center;font-size: 40px; color: indigo" >#HackTheDeep<h1>
+<div id= "quote" style= "text-align: center; margin-left: 80px; margin-right:80px; height: 150px;">
+<p style= "margin-left: 80px;margin-right: 80px; font-size: 20px;"> Hi, We're the BridgeUp: STEM Brown Scholars hackathon team. <br><p>
+<a style= "font-size: 20px;" href="https://github.com/amnh/HackTheDeep/wiki/Untold-Stories-of-Women-in-Science">LEARN MORE ABOUT THE CHALLENGE</a>
+
+<div id= "pict" style= "text-align: center; margin: 80px; height: 400px;">
+	<img style= "height: 400px;" src= "https://files.slack.com/files-tmb/T0F1RNWJE-F989ASD5M-6e04e316ec/image_uploaded_from_ios_1024.jpg">
+</div>
+
+<div id= "pict2" style= "text-align: center; margin: 20px;">
+	<img style= "height: 100px; margin: 20px;" src = "https://files.slack.com/files-pri/T0F1RNWJE-F96M9CHQ8/amnh-logo.jpg">
+	<img style= "height: 100px; marign: 20px;" src = "https://files.slack.com/files-pri/T0F1RNWJE-F97B0QRS6/bridgeup_logo.png">
+	</div>
+
 
 </body>
 </html>

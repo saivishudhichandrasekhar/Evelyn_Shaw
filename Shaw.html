@@ -3,7 +3,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -11,20 +16,9 @@ body {font-family: "Lato", sans-serif}
 <body>
 
 <style>
-#first {
-background-color: #e6e6e6;
+body {
+background-color: #f2f2f2;
 }
-h1 {
-  text-align:center;
-  font-family: 'Alfa Slab One', cursive;
-  font-size: 80px;
-  color: #333;
-}
-h3 {
-  background-color: #333;
-  padding: 5px;
-}
-
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -89,7 +83,15 @@ h3 {
 
 <div class="navbar">
   <a href="Shaw.html">HOME</a>
-  <a href="About.html">ABOUT</a>
+  <div class="dropdown">
+    <button class="dropbtn">ABOUT 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="About.html">BIOGRAPHY</a>
+      <a href="adversities.html">ADVERSITIES</a>
+    </div>
+  </div>   
   <a href="Research.html">RESEARCH</a>
   <a href="Publications.html">PUBLICATIONS</a>
   <div class="dropdown">
@@ -98,117 +100,87 @@ h3 {
     </button>
     <div class="dropdown-content">
       <a href="Contributions.html">SHAW'S CONTRIBUTIONS</a>
-      <a href="Challenge.html">CHALLENGE</a>
+      <a href="Challenge.html">HACK THE DEEP</a>
+      <a href="Social_Media.html">SOCIAL MEDIA</a>
     </div>
   </div> 
 </div>
 
-<h1>DR. EVELYN SHAW</h1>
 
+<h1 class="w3-wide" style= "text-align: center; font-size: 50px">DR. EVELYN SHAW</h1>
 
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="About.html" class="w3-bar-item w3-button w3-padding-large">About</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">Research</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Pictures/Historical Documents</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact/Legacy</a>
 </div>
+
+<div id= "quote" style= "text-align: center; margin-left: 80px; margin-right:80px; background-color: #333; height: 150px;">
+<p style= "margin-left: 80px;margin-right: 80px; padding-top: 10px; padding-bottom: 10px; color: white; font-size: 16px;">"I don't believe that women need to be encouraged to go into science- they are already enthusiastic and interested. What needs to be encouraged in women is that the belief that they can be dedicated scientists and still have time for a home and family."<br></br> -Dr. Evelyn Shaw</p>
+</div>
+
+
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Automatic Slideshow Images -->
     <div class="mySlides w3-display-container w3-center">
-    <img src="https://pbs.twimg.com/media/DVuCnVMWkAA-QXL.jpg" 
-      style="width:70%;height:400px;">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Dr. Shaw</h3>
+    <img src="https://files.slack.com/files-pri/T0F1RNWJE-F96HXEBK2/evelyn_shaw.jpg" 
+    	style="width:80%;height:500px;">
     </div>
     </div>
   <div class="mySlides w3-display-container w3-center">
-    <img src="https://www.amnh.org/var/ezflow_site/storage/images/media/amnh/images/exhibitions/permanent-exhibitions/human-origins-and-culture-halls/hall-of-human-origins/146502-1-eng-US/hall-of-human-origins_dynamic_lead_slide.jpg"
-      style="width:70%;height:400px;">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Hall of Man</h3>  
+    <img src="https://www.amnh.org/var/ezflow_site/storage/images/media/amnh/images/exhibitions/permanent-exhibitions/human-origins-and-culture-halls/hall-of-african-peoples/146475-1-eng-US/hall-of-african-peoples_dynamic_lead_slide.jpg" style="width:80%;height:500px;">
     </div>
   
   </div>
   <div class="mySlides w3-display-container w3-center">
     <img src="http://www.sciencemag.org/sites/default/files/styles/article_main_large/public/images/AMNH_Lead_0.jpg?itok=sZorEEmX" 
-      style="width:70%;height:400px;">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>AMNH</h3>
+    	style="width:80%;height:500px;">
     </div>
   </div>
 
   <!-- Home Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
     <h2 class="w3-wide">Dr. Evelyn Shaw </h2>
-    <p class="w3-opacity"><i>1926/1927 - May 19, 2003</i></p>
-    <p style = "text-align: center;"> Dr. Shaw, a writer and biologist, was the daughter of Polish immigrants. She graduated from NYU and Started working in the American Museum of Natural History as a scientist and curator. She researched fish who swim in schools. </p>
+    <p class="w3-opacity"><i>January 19, 1927 - May 19, 2003</i></p>
+    <p style = "text-align: center;"> Dr. Shaw, a writer and biologist, was the daughter of Polish immigrants. 
+    She graduated from NYU and Started working in the American Museum of Natural History as a scientist and curator. 
+    Shaw later became one of the most exceptional members of the AMNH staff.
+    She researched and published several papers about fish that swam in schools. </p>
     <div class="w3-row w3-padding-32">
-      <div>
-        <p style = "text-align: center;">Dr. Evelyn Shaw in 19--</p>
-        <img src="https://raw.githubusercontent.com/amnh/HackTheDeep/master/challenges/Untold_Stories_of_Women_in_Science/Evelyn_Shaw/Shaw.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style = "width: 50%;">
-      </div>
     </div>
   </div>
-  </div>
+  
 
-  <!-- Mailing List Section 
-  <div class="w3-black" id="tour">
+  <!-- Mailing List Section --> 
+  <div style= "background-color: #333" id="tour">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Mailing List</h2>
-      <p class="w3-opacity w3-center"><i>Join today to receive special messages!</i></p><br>
+      <h2 class="w3-wide w3-center" style= "color: white" >Mailing List</h2>
+      <p class="w3-center" style= "color: white" ><i>Join today to receive special messages!</i></p><br>
 
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>New York Mailing List</b></p>
-            <p class="w3-opacity">Text Here</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Click To Join</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>New Jersey Mailing List</b></p>
-            <p class="w3-opacity">Text Here</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Click To Join</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>San Francisco Mailing List</b></p>
-            <p class="w3-opacity">Text Here</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Click To Join</button>
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px; text-align: center">
+        <div id = "button>
+          
+            <button style= "text-align: center;" class="w3-button w3-black w3-center" onclick="document.getElementById('ticketModal').style.display='block'">CLICK TO JOIN</button>
           </div>
         </div>
       </div>
     </div>
-  </div> -->
+  </div> 
 
   <!-- Ticket Modal -->
   <div id="ticketModal" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+      <header class="w3-container w3-indigo w3-center w3-padding-32"> 
         <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+       class="w3-button w3-indigo w3-xlarge w3-display-topright">×</span>
         <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Registration</h2>
       </header>
       <div class="w3-container">
         <p><label><i class="fa fa-shopping-cart"></i> Name:</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Joan Smith">
+        <input class="w3-input w3-border" type="text" placeholder=" ">
         <p><label><i class="fa fa-user"></i> Email:</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="joan.smith@gmail.com">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">Submit <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <input class="w3-input w3-border" type="text" placeholder=" ">
+        <button class="w3-button w3-block w3-indigo w3-padding-16 w3-section w3-right">Submit <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-black w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
         <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
       </div>
     </div>
@@ -217,7 +189,25 @@ h3 {
   
 <!-- End Page Content -->
 </div>
+<!-- Add Google Maps 
+<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
+<script>
+function myMap() {
+  myCenter=new google.maps.LatLng(40.781324, -73.973988);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script> 
 
 
 <!-- Footer -->
@@ -225,10 +215,8 @@ h3 {
   <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
   <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">BridgeUp:STEM - Brown Scholars 2018 Hack the Deep</a></p>
+  <p class="w3-medium">Powered by <a href="http://www.bridgeup.org/bu-stem/" target="_blank">BridgeUp:STEM - Brown Scholars 2018 Hack the Deep</a></p>
 </footer>
 
 <script>
@@ -247,7 +235,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
+    setTimeout(carousel, 2000);    
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
