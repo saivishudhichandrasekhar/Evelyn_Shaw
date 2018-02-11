@@ -3,32 +3,99 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 </style>
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="Shaw.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-    <a href="About.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
-    <a href="Research.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Research</a>
-    <a href="Publications.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Publications</a>
- 
- <div class="w3-dropdown-hover">
-     <button class="w3-bar-item w3-button w3-padding-large">legacy &#8744; </button>
-     <div class="w3-dropdown-content w3-bar-block w3-card-4">
-       <a href="Challenge.html" class="w3-bar-item w3-button w3-padding-large"">Challenge</a>
-       <a href="Contributions.html" class="w3-bar-item w3-button w3-padding-large">Shaw's Contributions after death</a>
-     </div>
-     
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
+<style>
+#first {
+background-color: #e6e6e6;
+}
+
+h3 {
+	background-color: #333;
+	padding: 5px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+
+<div class="navbar">
+  <a href="Shaw.html">HOME</a>
+  <a href="About.html">ABOUT</a>
+  <a href="Research.html">RESEARCH</a>
+  <a href="Publications.html">PUBLICATIONS</a>
+  <div class="dropdown">
+    <button class="dropbtn">LEGACY 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Contributions.html">SHAW'S CONTRIBUTIONS</a>
+      <a href="Challenge.html">CHALLENGE</a>
+    </div>
+  </div> 
 </div>
 
 <!-- Navbar on small screens -->
@@ -39,5 +106,23 @@ body {font-family: "Lato", sans-serif}
   <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact/Legacy</a>
 </div>
 
-</body>
-</html>
+ <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1600px" id="band">
+    <h2 class="w3-wide"> RESEARCH </h2>
+    <p class="w3-opacity"><i> Exploratorium </i></p>
+    <p class="w3-justify"> Dr. Shaw was the first curator of life science at the Exploratorium with Frank Oppenheimer, a museum in San Francisco that was one of the first interactive museums to incorporate touch. She worked with Charlie Carlson to create animal behavior exhibitions, which was the first of its kind to involve visitors through a full sensory experience. 
+</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="https://www.flysfo.com/sites/default/files/06.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
