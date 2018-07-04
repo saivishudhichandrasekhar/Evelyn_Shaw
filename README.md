@@ -1,1 +1,1 @@
-# Evelyn_Shaw
+### Our website for the 2018 Hackathon at the American Museum of Natural History, Hack the Deep, addresses the challenge of telling the untold stories of women at the museum by highlighting the accomplishments of the incredible scientist Dr. Evelyn Shaw. 
